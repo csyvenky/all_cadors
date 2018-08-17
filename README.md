@@ -19,4 +19,4 @@ Splunk App to process Transport Canada Aviation Safety Data
     ```
 
 # Use
-1. Access the [main Dashboard](http://&lt;your splunk&gt;:8000/en-GB/app/all_cadors/all_cadors_dashboard)
+1. Access the main [Dashboard](http://your-splunk-ip:8000/en-GB/app/all_cadors/all_cadors_dashboard)

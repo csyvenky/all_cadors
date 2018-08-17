@@ -1,0 +1,125 @@
+[app/ui]
+version = 6.5.0
+modtime = 1482515865.975039000
+
+[app/launcher]
+version = 6.5.0
+modtime = 1482515866.008663000
+
+[props/web/EXTRACT-title]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1482524108.052917000
+
+[props/web/EXTRACT-cadorsNum]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1483550339.373979000
+
+[props/web/EXTRACT-occurrenceDate]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1482525355.527267000
+
+[props/web/EXTRACT-occurrenceTime]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1482525378.062523000
+
+[props/web/EXTRACT-occurrenceType]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1483550359.150881000
+
+[props/web/EXTRACT-fatalities]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.0
+modtime = 1482525728.695009000
+
+[views/detailed_cador_record]
+owner = admin
+version = 6.5.0
+modtime = 1487027317.067410000
+
+[html/detailed_cador_record_html]
+owner = admin
+version = 6.5.0
+modtime = 1487013683.669133000
+
+[lookups/ourairports_data.csv]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488748060.074003000
+
+[transforms/OurAirports.com]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.5.2
+modtime = 1488750669.188236000
+
+[indexes/cadors_all]
+owner = admin
+version = 7.0.2
+modtime = 1517705854.076010000
+
+[views/all_cadors_dashboard]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.1.0
+modtime = 1528670366.248114000
+
+[views/detailed_all_cador_record]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.2
+modtime = 1517721439.004307000
+
+[inputs/monitor%3A%2F%2F%2FUsers%2Fcory%2FDocuments%2FOneDrive%5C%20-%5C%20Force%5C%201024%2FAttachments%2FALL_CADORS%2F]
+version = 7.0.2
+modtime = 1519360427.326925000
+
+[inputs/monitor%3A%2F%2F%2FUsers%2Fcory%2FDocuments%2FOneDrive%20-%20Force%201024%2FAttachments%2FALL_CADORS%2F]
+version = 7.0.2
+modtime = 1519360532.103403000
+
+[datamodels/cadors_all_w_OTS_Date]
+access = write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.2
+modtime = 1523212083.860392000
+
+[models/cadors_all_w_OTS_Date]
+access = write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.2
+modtime = 1523212026.446684000
+
+[macros/ed%281%29]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525229961.879994000
+
+[inputs/splunktcp%3A%2F%2F9997]
+owner = admin
+version = 7.1.1
+modtime = 1529635488.171236000

@@ -1,0 +1,26 @@
+{
+    "modelName": "cadors_all_w_OTS_Date",
+    "displayName": "cadors_all_w_OTS_Date",
+    "description": "CADORS_ALL with OTS Timestamp",
+    "objectSummary": {
+        "Event-Based": 0,
+        "Transaction-Based": 0,
+        "Search-Based": 1
+    },
+    "objects": [
+        {
+            "objectName": "RootObject",
+            "displayName": "cadors_all_w_OTS_Date",
+            "parentName": "BaseSearch",
+            "comment": "",
+            "fields": [],
+            "calculations": [],
+            "constraints": [],
+            "lineage": "RootObject",
+            "baseSearch": "((index=\"cadors_all\") (sourcetype=\"cadors_all\")) | fields \"_time\", \"RptOccurrence.AerodromeID\", \"RptOccurrence.OccurrenceDate\", \"RptOccurrence.OccurrenceTime\" | eval \"OTS\"=if(isnull('RptOccurrence.OccurrenceDate'), \"\", 'RptOccurrence.OccurrenceDate').\" \".if(isnull('RptOccurrence.OccurrenceTime'), \"\", 'RptOccurrence.OccurrenceTime') | search \"RptOccurrence.AerodromeID\" = \"*\" | eval \"OTS\"=rtrim('OTS', \" Z\") | eval \"OTS\"=strptime('OTS', \"%Y-%m-%d %H%M\") | eval \"OTS_as_GMT_Date\"=strftime('OTS',\"%F %H:%M\")"
+        }
+    ],
+    "objectNameList": [
+        "RootObject"
+    ]
+}

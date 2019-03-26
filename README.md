@@ -4,19 +4,15 @@ Splunk App to process Transport Canada Aviation Safety Data
 *This is a work in progress.*
 
 # Setup
-1. Create an index on your Splunk instance, I called mine "*cadors_all*".
-2. Head over to Transport Canada and get some [XML CADORS data](http://wwwapps.tc.gc.ca/saf-sec-sur/2/cadors-screaq/m.aspx?lang=eng).
-3. Point your file input monitor at your data folder; select "*cadors_all*" as the sourcetype.
+1. Create an index on your Splunk instance, I called mine "*flight_aware_dump*".
+2. Head over to the PiAware project and setup forwarder to send some [JSON data](https://flightaware.com/adsb/piaware/).
+3. Point your forwarder's inputs.conf to the /run/dump1090-fa/*.json path; set "*flight_aware_dump*" as the sourcetype and index.
 4. Install the app.
 
 # Install
 1. Navigate to $SPLUNK_HOME/etc/apps
-2. Execute: `git clone https://github.com/csyvenky/all_cadors.git`
-3. Restart Splunk: via Splunk Web or any other way you know how. Alternatively, you can use the Ansible Playbook 
-*restart_splunk.yml* - a quick and dirty restart tool for splunkd.
-    ```
-    ansible-playbook -i hosts restart_splunk.yml --ask-pass
-    ```
+2. Execute: `git clone https://github.com/csyvenky/pi_aware.git`
+3. Restart Splunk: via Splunk Web or any other way you know how.
 
 # Use
-1. Access the main [Dashboard](http://your-splunk-ip:8000/en-GB/app/all_cadors/all_cadors_dashboard)
+1. Access the main [Dashboard](http://your-splunk-ip:8000/en-US/app/flightaware/piaware)
